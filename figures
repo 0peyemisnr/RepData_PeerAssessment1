@@ -1,0 +1,14 @@
+# Calculate the mean and median of the total number of steps taken per day
+round(mean(steps_per_day$steps))
+
+#the answer is 10766
+#calculate the median
+
+median(steps_per_day$steps)
+#the answer is 10765
+
+# Calculate the number of rows with missing values
+missing_value_act <- activity[!complete.cases(activity), ]
+nrow(missing_value_act)
+
+#the answer is 0
