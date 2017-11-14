@@ -1,14 +1,24 @@
-# Calculate the mean and median of the total number of steps taken per day
-round(mean(steps_per_day$steps))
+No. 3   #Calculate the mean and median of the total number of steps taken per day
+        round(mean(steps_per_day$steps))
 
-#the answer is 10766
-#calculate the median
+        #the answer for mean is 10766
+        
+        #calculate the median
+        median(steps_per_day$steps)
+        #the answer fro median is 10765
 
-median(steps_per_day$steps)
-#the answer is 10765
+No. 5   #Find The 5-minute interval that, on average, contains the maximum number of steps
+        "The interval with the highest avg steps is  835  and the no of steps for that interval is  206.2"
 
-# Calculate the number of rows with missing values
-missing_value_act <- activity[!complete.cases(activity), ]
-nrow(missing_value_act)
+No. 6   # Calculate the number of rows with missing values
+          missing_value_act <- activity[!complete.cases(activity), ]
+          nrow(missing_value_act)
 
-#the answer is 0
+          #the answer is 2304
+
+No. 7   # Calculate the Histogram of the total number of steps taken each day after missing values are imputed
+          round(mean(steps_per_day_impute$steps))
+          #The answer is 10766
+          
+          median(steps_per_day_impute$steps)
+          10766.19
